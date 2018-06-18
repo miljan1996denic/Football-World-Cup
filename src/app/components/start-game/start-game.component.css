@@ -1,0 +1,18 @@
+.Kontejner {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-left: 33%;
+  }  
+.col25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+   
+  }
+  
+.col75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }

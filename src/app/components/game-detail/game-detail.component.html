@@ -1,0 +1,7 @@
+<div class="detalji" *ngIf="forDetail != null">
+      HOME    GUEST  <br/>
+      <div class="levi">{{forDetail.home}}</div>  <div class="desni">{{forDetail.guest}}</div> <br/>
+      <button (click)="homeGoal()" mat-button  class="dugme">+</button>
+      {{forDetail.goalHome}} : {{forDetail.goalGuest}} 
+      <button (click)="guestGoal()" mat-button  class="dugme">+</button>
+</div>

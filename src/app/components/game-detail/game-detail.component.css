@@ -1,0 +1,26 @@
+
+.detalji{
+    float: left;
+    /* background: linear-gradient(to bottom left, #66AB8C, #FFF7C0); */
+    background-color: white;
+    border: solid 3px black;
+    width: 70%;
+    height: auto;
+    color: black;
+    font-family: OCR A Std, monospace;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+.levi{
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+.desni{
+    text-align: right;
+    width: 50%;
+    float: left;
+}

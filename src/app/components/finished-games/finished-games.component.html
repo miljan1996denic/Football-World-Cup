@@ -1,0 +1,8 @@
+<app-game-detail [forDetail]="forDetail"></app-game-detail>
+<div class="zavrsene">
+  <div *ngFor="let game of games">
+    <app-game
+      [game]="game" (selectedGameEvent)="onSelected($event)"
+    ></app-game>
+  </div>
+</div>

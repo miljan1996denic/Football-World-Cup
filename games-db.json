@@ -1,0 +1,31 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "finised": false,
+      "home": "Serbiaaaa",
+      "guest": "Costarica",
+      "goalHome": 1,
+      "goalGuest": 0,
+      "minut": 0
+    },
+    {
+      "id": 2,
+      "finised": false,
+      "home": "Portugal",
+      "guest": "Spain",
+      "goalHome": 3,
+      "goalGuest": 3,
+      "minut": 0
+    },
+    {
+      "id": 5,
+      "finised": false,
+      "home": "Brasil",
+      "guest": "Switzerland",
+      "goalHome": 0,
+      "goalGuest": 1,
+      "minut": 0
+    }
+  ]
+}

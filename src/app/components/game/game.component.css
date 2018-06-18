@@ -1,0 +1,8 @@
+.utakmica{
+    border: solid 1px black;
+    margin: 10px;
+    width: 280px;
+    padding-left: 10px;
+    float: left;
+    border-radius: 10px;
+}

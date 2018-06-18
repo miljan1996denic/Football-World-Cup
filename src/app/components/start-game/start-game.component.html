@@ -1,0 +1,20 @@
+<div>
+  <div class="Kontejner">
+    <div class="row">
+        <div class="col25">
+            Home:
+        </div>
+        <div class="col75">
+            <input [(ngModel)]="game.home" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col25">
+            Guest:
+        </div>
+        <div class="col75">
+            <input [(ngModel)]="game.guest"/>
+        </div>
+    </div>
+    <button  mat-raised-button class="dugme" (click)="onAddGame()">Add</button>
+  </div>

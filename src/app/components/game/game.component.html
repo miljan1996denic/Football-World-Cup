@@ -1,0 +1,6 @@
+<div   class="utakmica" *ngIf="game != null">
+  <h2>
+    {{ game.home }}  :  {{ game.guest}}
+  </h2>
+  <button (click)="selectGame()" mat-button  class="dugme">Statistika</button>
+</div>
