@@ -1,8 +1,8 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import {Game} from '../../models/game';
 import {Store} from '@ngrx/store';
 import {State } from '../../store';
-import {addGame,fetch} from '../../store/actions';
+import GamesService from '../../services/utakmica.services';
 
 @Component({
   selector: 'app-start-game',
@@ -11,17 +11,20 @@ import {addGame,fetch} from '../../store/actions';
 })
 export class StartGameComponent implements OnInit {
 
-  game:Game = new Game(null, false, "", "",0,0,0);
+  game:Game = new Game(null,"", "",0,0);
 
-  constructor(private store$: Store<State>) { }
+  constructor(
+    private store$: Store<State>,
+    private GamesService: GamesService) { }
 
   ngOnInit() {
     
   }
 
   onAddGame() {
-      console.log("afafafa",this.game);
-      this.store$.dispatch(new addGame(this.game));
+      this.GamesService.addGame(this.game);
+      this.game.home="";
+      this.game.guest="";
   }
 
 }

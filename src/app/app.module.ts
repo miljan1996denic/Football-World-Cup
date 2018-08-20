@@ -14,6 +14,9 @@ import { FinishedGamesComponent } from './components/finished-games/finished-gam
 import { GameComponent } from './components/game/game.component';
 import {rootReducer} from './store';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EffectsModule } from '@ngrx/effects';
+import {effects} from '../app/store/effects/index';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,8 +32,8 @@ const appRoutes: Routes = [
     FinishedGamesComponent,
     GameComponent,
     GameDetailComponent
-    // MatInputModule,
-    // MatFormFieldModule
+    //  MatInputModule,
+    //  MatFormFieldModule
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,9 @@ const appRoutes: Routes = [
       // { enableTracing: true } // <-- debugging purposes only
     ),
     StoreModule.forRoot(rootReducer),
-    StoreDevtoolsModule.instrument({})
+    StoreDevtoolsModule.instrument({}),
+    HttpClientModule,
+    EffectsModule.forRoot(effects)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,9 @@
+<input class="input" type="text" placeholder="Search.." (input)="search($event)"/>
 <app-game-detail [forDetail]="forDetail"></app-game-detail>
 <div class="zavrsene">
-  <div *ngFor="let game of games">
+    
+  <div *ngFor="let game of games$ | async">
+    
     <app-game
       [game]="game" (selectedGameEvent)="onSelected($event)"
     ></app-game>

@@ -2,30 +2,45 @@
   "games": [
     {
       "id": 1,
-      "finised": false,
-      "home": "Serbiaaaa",
+      "home": "Serbia",
       "guest": "Costarica",
-      "goalHome": 1,
-      "goalGuest": 0,
-      "minut": 0
-    },
-    {
-      "id": 2,
-      "finised": false,
-      "home": "Portugal",
-      "guest": "Spain",
-      "goalHome": 3,
-      "goalGuest": 3,
-      "minut": 0
+      "goalHome": 2,
+      "goalGuest": 1
     },
     {
       "id": 5,
-      "finised": false,
       "home": "Brasil",
       "guest": "Switzerland",
-      "goalHome": 0,
-      "goalGuest": 1,
-      "minut": 0
+      "goalHome": 2,
+      "goalGuest": 1
+    },
+    {
+      "id": 21,
+      "home": "France ",
+      "guest": "Croatia",
+      "goalHome": 4,
+      "goalGuest": 2
+    },
+    {
+      "id": 22,
+      "home": "Belgium ",
+      "guest": "England",
+      "goalHome": 2,
+      "goalGuest": 0
+    },
+    {
+      "id": 23,
+      "home": "Russia ",
+      "guest": "Swedden",
+      "goalHome": 2,
+      "goalGuest": 3
+    },
+    {
+      "id": 24,
+      "home": "Columbia ",
+      "guest": "England",
+      "goalHome": 1,
+      "goalGuest": 2
     }
   ]
 }

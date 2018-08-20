@@ -3,3 +3,12 @@
     float: left;
     text-align: center;
 }
+
+.input{
+    width: 250px;
+    height: 25px;
+    padding: 7px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 15px;
+    margin-left: 30%;
+}

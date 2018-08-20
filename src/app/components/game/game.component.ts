@@ -1,5 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {Game} from '../../models/game';
+import {Store} from '@ngrx/store';
+import {State } from '../../store';
+import GamesService from '../../services/utakmica.services';
+import {deleteGame} from '../../store/actions';
 
 @Component({
   selector: 'app-game',
@@ -11,8 +15,10 @@ export class GameComponent implements OnInit {
   @Input() public game: Game;
   @Output() public selectedGameEvent: EventEmitter<Game> = new EventEmitter();
 
-  constructor() {
-    console.log("uso u game const")
+  constructor(
+    private store$:Store<State>,
+    private GamesService: GamesService
+  ) {
    }
 
   ngOnInit() {
@@ -20,5 +26,9 @@ export class GameComponent implements OnInit {
 
   selectGame(){
     this.selectedGameEvent.emit(this.game)
+  }
+  deleteGame(){
+      this.store$.dispatch(new deleteGame(this.game.id));
+      this.GamesService.deleteGame(this.game.id);
   }
 }
